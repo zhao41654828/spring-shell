@@ -68,7 +68,7 @@ public class LegacyCommands implements CommandMarker {
 		return String.format(("Successfully registered module '%s:%s'"), type, name);
 	}
 
-	@CliCommand(value = "sum", help = "adds two numbers. Will also toggle the 'register module' command availability")
+	@CliCommand(value = "sum", help = "adds two numbers. example 'sum --v1 1 --v2 2'")
 	public int sum(
 		@CliOption(key = "v1", unspecifiedDefaultValue = "38") int a,
 		@CliOption(key = "v2", specifiedDefaultValue = "42") int b) {
